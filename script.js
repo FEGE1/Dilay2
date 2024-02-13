@@ -12,14 +12,20 @@ function moveButton(){
     document.getElementById('message').style.display='block';
     document.getElementById('headmessage').style.display='block';
     document.getElementById('gif').style.display='none';
+    document.getElementById('headmessage2').style.display='none';
+    document.getElementById('content').style.display='block';
+    document.getElementById('content').innerHTML="<h2>Uzatmak istediğini biliyorum !</h2>";
     console.log(`x: ${x} ve y: ${y}`)
 }
 function nextPage(){
     window.location.href = "yes.html";
 }
 function yesButton(){
+    document.getElementById('maingif').style.display= 'none';
+    document.getElementById('content').style.display='none';
     document.getElementById('message').style.display='none';
     document.getElementById('headmessage').style.display='none';
+    document.getElementById('headmessage2').style.display='block';
     document.getElementById('gif').style.display='block';
     document.getElementById('gifsad').style.display= 'none';
 
